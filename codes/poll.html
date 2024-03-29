@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construction Management Software Poll</title>
+  <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <h1>Construction Management Software Poll</h1>
+    <img src="https://thumbs.dreamstime.com/b/image-presented-badge-opinion-poll-vector-illustration-90662917.jpg" alt="A description of the image" style="width:20% ; justify-content: center; margin-left: 250px;
+    margin-right: auto;">
+    <form id="pollForm" >
+        <h2>Inventory Tracking & Management</h2>
+    <p>How important is real-time inventory visibility to your construction projects?</p>
+    <ul class="radio-group">
+      <li>
+        <input type="radio" id="inventory1" name="inventory" value="veryImportant">
+        <label for="inventory1">Very Important</label>
+      </li>
+      <li>
+        <input type="radio" id="inventory2" name="inventory" value="somewhatImportant">
+        <label for="inventory2">Somewhat Important</label>
+      </li>
+      <li>
+        <input type="radio" id="inventory3" name="inventory" value="neutral">
+        <label for="inventory3">Neutral</label>
+      </li>
+      <li>
+        <input type="radio" id="inventory4" name="inventory" value="notImportant">
+        <label for="inventory4">Not Important</label>
+      </li>
+    </ul>
+
+    <h2>Procurement & Purchasing</h2>
+    <p>On a scale of 1 (Never) to 5 (Always), how often do you experience delays due to inefficient material procurement?</p>
+    <select id="procurementDelay" name="procurementDelay">
+      <option value="0">Never</option>
+      <option value="1">Rarely</option>
+      <option value="2">Sometimes</option>
+      <option value="3">Often</option>
+      <option value="4">Always</option>
+    </select>
+
+    <h2>Additional Feature</h2>
+    <p>Is there any specific feature missing from the list you'd like to see in a construction material management software?</p>
+    <textarea id="missingFeature" name="missingFeature" rows="5"></textarea>
+    <br>
+
+    <button type="submit">Submit Poll</button>
+   
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
