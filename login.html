@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Signup</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image:url("https://images.unsplash.com/photo-1477346611705-65d1883cee1e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+      background-repeat:no-repeat;
+    }
+
+    form {
+      background-image: url("formbg.jpg");
+      padding: 80px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 50%;
+      backdrop-filter: blur(2px);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .switch-form {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .switch-form a {
+      color: #4caf50;
+      text-decoration: none;
+    }
+
+    .switch-form a:hover {
+      text-decoration: underline;
+    }
+
+    .ey{
+      text-align:bottom;
+      text-shadow: black;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="ey"></h1>
+
+
+  <form id="loginForm">
+    <h2>Login</h2>
+    <label for="loginUsername">Username:</label>
+    <input type="text" id="loginUsername" name="loginUsername" required>
+
+    <label for="loginPassword">Password:</label>
+    <input type="password" id="loginPassword" name="loginPassword" required>
+
+    <button type="button" onclick="login()">Login</button>
+
+    <div class="switch-form">
+      <span>Don't have an account? <a href="#" onclick="switchForm('signupForm')">Sign up</a></span>
+    </div>
+  </form>
+
+
+  <form id="signupForm" style="display:none;">
+    <h2>Sign Up</h2>
+    <label for="signupUsername">Username:</label>
+    <input type="text" id="signupUsername" name="signupUsername" required>
+
+    <label for="mail">E-mail:</label>
+    <input type="email" id="mail" name="mail" required>
+
+    <label for="signupPassword">Password:</label>
+    <input type="password" id="signupPassword" name="signupPassword" required>
+
+    <button type="button" onclick="signup()">Sign Up</button>
+
+    <div class="switch-form">
+      <span>Already have an account? <a href="#" onclick="switchForm('loginForm')">Login</a></span>
+    </div>
+  </form>
+
+  <script>
+    function switchForm(formId) {
+      document.getElementById('loginForm').style.display = 'none';
+      document.getElementById('signupForm').style.display = 'none';
+
+      document.getElementById(formId).style.display = 'block';
+    }
+
+    function login() {
+  
+      alert('Login successful! Redirecting to the home page.');
+
+      redirectToHomePage();
+    }
+
+    function signup() {
+   
+      alert('Sign up successful! Redirecting to the home page.');
+
+     
+      redirectToHomePage();
+    }
+
+    function redirectToHomePage() {
+ 
+      window.location.href = "front.html";
+    }
+  </script>
+  
+
+</body>
+</html>

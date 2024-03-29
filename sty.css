@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: rgb(12, 19, 138);
+    background-image: url("https://www.shutterstock.com/shutterstock/photos/1937069089/display_1500/stock-vector-your-opinion-matters-symbol-survey-or-feedback-sign-vector-1937069089.jpg")
+    
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    backdrop-filter: blur(75px);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.balance {
+    text-align: center;
+}
+
+.balance p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.transactions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.transactions li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.transactions li.expense {
+    border-color: #dc3545;
+}
+
+.transactions li.income {
+    border-color: #28a745;
+}

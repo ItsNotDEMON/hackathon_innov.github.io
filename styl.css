@@ -1,0 +1,37 @@
+
+.container {
+    text-align: center; 
+    margin-top: 500px; 
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #768494fb;
+    border-radius: 5px;
+    backdrop-filter: blur(75px);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+  
+  .link {
+    display: inline-block; 
+    margin: 10px; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    color: #000000; 
+    border: 1px solid #000000;
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s; 
+  }
+  
+  .link:hover {
+    background-color: #007bff; 
+    color: #fff;
+  }
+  body{
+    background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg");
+  }
+  
